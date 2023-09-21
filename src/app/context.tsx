@@ -1,3 +1,4 @@
+'use client';
 import React, { FC, useMemo } from 'react';
 import {
   ConnectionProvider,
@@ -43,6 +44,7 @@ export const Wallet: FC = () => {
         <WalletModalProvider>
           <WalletMultiButton />
           <WalletDisconnectButton />
+
           {/* Your app's components go here, nested within the context providers. */}
         </WalletModalProvider>
       </WalletProvider>
